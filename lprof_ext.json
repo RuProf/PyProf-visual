@@ -1,0 +1,309 @@
+{
+    "./src/lib_test.py": {
+        "read_df": {
+            "line": {
+                "5": {
+                    "code": "def read_df():",
+                    "pct_time": ""
+                },
+                "6": {
+                    "count": 14,
+                    "time": 475389427,
+                    "code": "    x = pd.read_csv(\"https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/refs/heads/master/all/all.csv\")",
+                    "pct_time": 100.0
+                },
+                "7": {
+                    "count": 7,
+                    "time": 5560,
+                    "code": "    return x",
+                    "pct_time": 0.0
+                }
+            },
+            "total_time": 475394987
+        },
+        "funcX": {
+            "line": {
+                "9": {
+                    "code": "def funcX():",
+                    "pct_time": ""
+                },
+                "10": {
+                    "count": 7,
+                    "time": 7007071245,
+                    "code": "    time.sleep(1)",
+                    "pct_time": 93.6
+                },
+                "11": {
+                    "count": 7,
+                    "time": 475611855,
+                    "code": "    df = read_df()",
+                    "pct_time": 6.4
+                },
+                "12": {
+                    "count": 7,
+                    "time": 1775171,
+                    "code": "    return df.iloc[0]",
+                    "pct_time": 0.0
+                }
+            },
+            "total_time": 7484458271
+        }
+    },
+    "./test.py": {
+        "func1": {
+            "line": {
+                "20": {
+                    "code": "def func1():",
+                    "pct_time": ""
+                },
+                "21": {
+                    "count": 14,
+                    "time": 494986,
+                    "code": "    x = np.random.randint(1e2)",
+                    "pct_time": 98.2
+                },
+                "22": {
+                    "count": 14,
+                    "time": 8920,
+                    "code": "    return x",
+                    "pct_time": 1.8
+                }
+            },
+            "total_time": 503906
+        },
+        "func2": {
+            "line": {
+                "24": {
+                    "code": "def func2():",
+                    "pct_time": ""
+                },
+                "25": {
+                    "count": 14,
+                    "time": 134469,
+                    "code": "    x = np.random.randint(1e3)",
+                    "pct_time": 95.9
+                },
+                "26": {
+                    "count": 14,
+                    "time": 5720,
+                    "code": "    return x",
+                    "pct_time": 4.1
+                }
+            },
+            "total_time": 140189
+        },
+        "func3": {
+            "line": {
+                "28": {
+                    "code": "def func3():",
+                    "pct_time": ""
+                },
+                "29": {
+                    "count": 7,
+                    "time": 58929,
+                    "code": "    x = np.random.randint(1e4)",
+                    "pct_time": 95.7
+                },
+                "30": {
+                    "count": 7,
+                    "time": 2620,
+                    "code": "    return x",
+                    "pct_time": 4.3
+                }
+            },
+            "total_time": 61549
+        },
+        "func4": {
+            "line": {
+                "32": {
+                    "code": "def func4():",
+                    "pct_time": ""
+                },
+                "33": {
+                    "count": 7,
+                    "time": 55430,
+                    "code": "    x = np.random.randint(1e5)",
+                    "pct_time": 95.8
+                },
+                "34": {
+                    "count": 7,
+                    "time": 2430,
+                    "code": "    return x",
+                    "pct_time": 4.2
+                }
+            },
+            "total_time": 57860
+        },
+        "func5": {
+            "line": {
+                "36": {
+                    "code": "def func5():",
+                    "pct_time": ""
+                },
+                "37": {
+                    "count": 7,
+                    "time": 55358,
+                    "code": "    x = np.random.randint(1e6)",
+                    "pct_time": 95.5
+                },
+                "38": {
+                    "count": 7,
+                    "time": 2610,
+                    "code": "    return x",
+                    "pct_time": 4.5
+                }
+            },
+            "total_time": 57968
+        },
+        "funcA": {
+            "line": {
+                "40": {
+                    "code": "def funcA():",
+                    "pct_time": ""
+                },
+                "41": {
+                    "count": 7,
+                    "time": 539465,
+                    "code": "    func1()",
+                    "pct_time": 79.0
+                },
+                "42": {
+                    "count": 7,
+                    "time": 143197,
+                    "code": "    func2()",
+                    "pct_time": 21.0
+                }
+            },
+            "total_time": 682662
+        },
+        "funcB": {
+            "line": {
+                "44": {
+                    "code": "def funcB():",
+                    "pct_time": ""
+                },
+                "45": {
+                    "count": 7,
+                    "time": 106790,
+                    "code": "    func1()",
+                    "pct_time": 20.4
+                },
+                "46": {
+                    "count": 7,
+                    "time": 102350,
+                    "code": "    func2()",
+                    "pct_time": 19.5
+                },
+                "47": {
+                    "count": 7,
+                    "time": 108659,
+                    "code": "    func3()",
+                    "pct_time": 20.7
+                },
+                "48": {
+                    "count": 7,
+                    "time": 104459,
+                    "code": "    func4()",
+                    "pct_time": 19.9
+                },
+                "49": {
+                    "count": 7,
+                    "time": 101938,
+                    "code": "    func5()",
+                    "pct_time": 19.4
+                }
+            },
+            "total_time": 524196
+        },
+        "main": {
+            "line": {
+                "53": {
+                    "code": "def main():",
+                    "pct_time": ""
+                },
+                "54": {
+                    "code": "    # for _ in range(10000):",
+                    "pct_time": ""
+                },
+                "55": {
+                    "code": "    #     BigClass.my_function2(200)",
+                    "pct_time": ""
+                },
+                "56": {
+                    "code": "    #     BigClass.another_function4(10)",
+                    "pct_time": ""
+                },
+                "57": {
+                    "code": "",
+                    "pct_time": ""
+                },
+                "58": {
+                    "code": "    while 1:",
+                    "pct_time": ""
+                },
+                "59": {
+                    "count": 7,
+                    "time": 7006679747,
+                    "code": "        time.sleep(1)",
+                    "pct_time": 46.5
+                },
+                "60": {
+                    "count": 7,
+                    "time": 862331,
+                    "code": "        funcA()",
+                    "pct_time": 0.0
+                },
+                "61": {
+                    "count": 7,
+                    "time": 586723,
+                    "code": "        funcB()",
+                    "pct_time": 0.0
+                },
+                "62": {
+                    "count": 7,
+                    "time": 510361396,
+                    "code": "        readw2()",
+                    "pct_time": 3.4
+                },
+                "63": {
+                    "count": 7,
+                    "time": 7484803678,
+                    "code": "        funcX()",
+                    "pct_time": 49.7
+                },
+                "64": {
+                    "code": "    # print(profile.get_stats().timings)",
+                    "pct_time": ""
+                },
+                "65": {
+                    "code": "    # print(lprofile_ext.get_stats().timings)",
+                    "pct_time": ""
+                },
+                "66": {
+                    "code": "",
+                    "pct_time": ""
+                },
+                "67": {
+                    "count": 6,
+                    "time": 70450492,
+                    "code": "        export_profiler()",
+                    "pct_time": 0.5
+                },
+                "68": {
+                    "code": "        ",
+                    "pct_time": ""
+                },
+                "69": {
+                    "code": "    # from lprof_ext import export_profiler",
+                    "pct_time": ""
+                },
+                "70": {
+                    "code": "    # export_profiler()",
+                    "pct_time": ""
+                }
+            },
+            "total_time": 15073744367
+        }
+    },
+    "entrypoint": "./test.py"
+}

@@ -1,0 +1,43 @@
+{
+    "name": "PyProf-visual",
+    "version": "0.0.1",
+    "publisher": "RuProf",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "displayName": "Profiling Data Visualizer",
+    "description": "Visualize lprof_ext.json from python library `lprof_ext`",
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:PyProfVisual.open"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "PyProfVisual.open",
+                "title": "Open PyProf-Visual"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.10",
+        "@types/node": "^16.18.126",
+        "@types/vscode": "^1.60.0",
+        "mocha": "^11.1.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^4.4.4",
+        "@vscode/test-electron": "^2.4.1"
+    },
+    "dependencies": {
+        "d3": "^7.8.5"
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyProf-visual</title>
+    <link rel="stylesheet" href="{{cssPath}}">
+</head>
+<body>
+    <!-- Theme toggle button -->
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn" title="Toggle Dark Mode">🌙</button>
+    </div>
+
+    <!-- Settings button -->
+    <div class="settings-button">
+        <button id="settings-btn" title="Settings">⚙️</button>
+    </div>
+
+    <!-- Main content -->
+    <div id="main-content" style="display: none;">
+        <div class="container">
+            <div class="tree-panel">
+                <!-- <h2>Files</h2> -->
+                <div class="tree-controls">
+                    <div class="file-tree-panel">
+                        <div id="file-tree">
+                            <!-- <h3>Profiling Files</h3> -->
+                            <ul class="directory"></ul>
+                        </div>
+                    </div>
+                    <button id="tree-toggle-btn">+ Expand +</button>
+                </div>
+                <div id="tree-list"></div>
+            </div>
+            <div class="details-panel">
+                <div class="header-container">
+                    <button id="go-back-btn">
+                        <svg height="16" width="16" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024"><path d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"></path></svg>
+                        <span>Back</span>
+                    </button>
+                    <h2 id="function-name"></h2>
+                </div>
+                <div id="function-stats"></div>
+                <table id="lines-table">
+                    <thead>
+                        <tr>
+                            <th>Line</th>
+                            <th>Hit</th>
+                            <th>Time</th>
+                            <th>Time / Hit</th>
+                            <th>% Time</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Callers modal -->
+    <div id="callers-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h3>Been Called By</h3>
+            <table id="callers-table">
+                <thead>
+                    <tr>
+                        <th>Hits</th>
+                        <th>Function</th>
+                        <th>File</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Settings modal -->
+    <div id="settings-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h3>Settings</h3>
+            <label for="pct-threshold">Highlight Threshold (%):</label>
+            <input type="number" id="pct-threshold" min="0" max="100" step="1" class="pct-threshold-input">
+            <div class="modal-buttons">
+                <button id="reset-settings">Reset</button>
+                <button id="save-settings">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{d3Path}}"></script>
+    <script src="{{scriptPath}}"></script>
+
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        /* Firefox */
+        input[type=number] {
+          -moz-appearance: textfield;
+        }
+    </style>
+    
+</body>
+</html>
