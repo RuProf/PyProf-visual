@@ -46,11 +46,14 @@
     },
     "files": [
         "out/**",
+        "images/icon.jpg",
+        "images/screenshot.png",
         "src/webview/**",
         "src/test/**",
         "LICENSE.md",
         "README.md",
         "CHANGELOG.md",
         "package.json"
-    ]
+    ],
+    "icon": "images/icon.jpg"
 }

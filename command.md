@@ -32,19 +32,22 @@ check vscode version and vscode engine version in `package.json`
 
 src/extension.ts + `F5`
 
+
+
+
+Development
 ```bash
 npm install 
 # npm install d3
 npm run compile
-
 ```
-publish 
+
+
+Publish 
 ```bash
 npm install -g vsce
 # to vsix 
 vsce package 
-
-
 ```
 
 

@@ -19,7 +19,4 @@ lprof_ext test.py
 install PyProf-visual extension
 `Ctrl+Shift+P` > `PyProf-visual`
 
-
-```
-code --install-extension PyProf-visual-0.0.1.vsix
-```
+![screenshot](images/screenshot.png)
