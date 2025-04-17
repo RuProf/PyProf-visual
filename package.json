@@ -1,6 +1,6 @@
 {
     "name": "PyProf-visual",
-    "version": "0.0.1",
+    "version": "0.0.4",
     "publisher": "RuProf",
     "engines": {
         "vscode": "^1.60.0"
@@ -11,7 +11,8 @@
         "Visualization"
     ],
     "activationEvents": [
-        "onCommand:PyProfVisual.open"
+        "onCommand:PyProfVisual.open",
+        "workspaceContains:.lprofile"
     ],
     "main": "./out/extension.js",
     "contributes": {
