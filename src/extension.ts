@@ -19,9 +19,8 @@ export async function activate(context: vscode.ExtensionContext) {
 
         // Check if a webview is already open
         if (currentPanel) {
-            vscode.window.showErrorMessage(
-                'One profile viewer at a time. If you want to open multiple profiles, use Docker.'
-            );
+            vscode.window.showInformationMessage('docker run --rm -d -p 8080:8080 ruprof/prof_gui:rust');
+            vscode.window.showErrorMessage('One profile viewer at a time. Please use Docker for multiple profiles.');
             return;
         }
 

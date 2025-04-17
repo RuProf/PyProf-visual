@@ -5,6 +5,8 @@ All notable changes to the "profiling-data-visualizer" extension will be documen
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## [Released]
+v0.0.5 - hotfix
+ - [chore] - update InfoMsg for `docker command`
 
 v0.0.3
  - [Fixed] - state change when multi file
