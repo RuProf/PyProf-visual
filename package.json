@@ -5,7 +5,7 @@
     "engines": {
         "vscode": "^1.60.0"
     },
-    "displayName": "Profiling Data Visualizer",
+    "displayName": "Python Profile Visualizer",
     "description": "Visualize lprof_ext.json from python library `lprof_ext`",
     "categories": [
         "Visualization"
