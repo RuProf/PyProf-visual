@@ -17,15 +17,23 @@
         <button id="settings-btn" title="Settings">⚙️</button>
     </div>
 
+    <!-- Loading indicator -->
+    <div id="loading" style="text-align: center; padding: 20px; display: none;">
+        <p>Loading profiling data...</p>
+    </div>
+
+    <!-- No data placeholder -->
+    <!-- <div id="no-data" style="text-align: center; padding: 20px;">
+        <p>No profiling data found. Please load a valid JSON file from the .lprofile directory.</p>
+    </div> -->
+
     <!-- Main content -->
     <div id="main-content" style="display: none;">
         <div class="container">
             <div class="tree-panel">
-                <!-- <h2>Files</h2> -->
                 <div class="tree-controls">
                     <div class="file-tree-panel">
                         <div id="file-tree">
-                            <!-- <h3>Profiling Files</h3> -->
                             <ul class="directory"></ul>
                         </div>
                     </div>
@@ -107,6 +115,5 @@
           -moz-appearance: textfield;
         }
     </style>
-    
 </body>
 </html>
