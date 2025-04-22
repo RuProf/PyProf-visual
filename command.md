@@ -48,6 +48,8 @@ Publish
 npm install -g vsce
 # to vsix 
 vsce package 
+
+vsce publish
 ```
 
 

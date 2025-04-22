@@ -1,11 +1,11 @@
 {
     "name": "PyProf",
-    "version": "0.0.6",
-    "publisher": "ruprofofficial",
+    "version": "0.1.0",
+    "publisher": "RuProf",
     "engines": {
         "vscode": "^1.60.0"
     },
-    "displayName": "Python Profile-Visualizer",
+    "displayName": "Python Profile Visualizer",
     "description": "Visualize lprof_ext.json from python library `lprof_ext`",
     "categories": [
         "Visualization"
