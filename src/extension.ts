@@ -15,7 +15,7 @@ export async function activate(context: vscode.ExtensionContext) {
     let currentPanel: vscode.WebviewPanel | null = null; // Track the single webview panel
 
     let disposable = vscode.commands.registerCommand('PyProfVisual.open', async () => {
-        console.log('Attempting to open PyProf-visual'); // Diagnostic
+        console.log('Attempting to open PyProf'); // Diagnostic
 
         // Check if a webview is already open
         if (currentPanel) {
@@ -27,7 +27,7 @@ export async function activate(context: vscode.ExtensionContext) {
         // Create the webview panel
         const panel = vscode.window.createWebviewPanel(
             'PyProfVisual',
-            'PyProf-visual',
+            'PyProf',
             vscode.ViewColumn.One,
             {
                 enableScripts: true,
@@ -161,7 +161,9 @@ export async function activate(context: vscode.ExtensionContext) {
                         targetFile = files[0];
                         console.log(`lprof_ext.json not found, selecting first JSON file: ${targetFile}`); // Diagnostic
                     }
-
+                    
+                    // print targetFile
+                    
                     // Load the selected JSON file
                     if (targetFile) {
                         const filePath = path.join(lprofileDir, targetFile);
@@ -288,7 +290,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
     // Recreate panel if it was open before reload
     if (context.globalState.get('PyProfVisualPanel')) {
-        console.log('Recreating PyProf-visual webview after window reload'); // Diagnostic
+        console.log('Recreating PyProf webview after window reload'); // Diagnostic
         await vscode.commands.executeCommand('PyProfVisual.open');
     }
 
