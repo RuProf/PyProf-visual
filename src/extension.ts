@@ -180,6 +180,7 @@ export async function activate(context: vscode.ExtensionContext) {
                     }
                 } else if (!savedState?.activeFile) {
                     // Case 3: No JSON files found
+                    vscode.window.showErrorMessage('No JSON files in .lprofile/, displaying empty webview');
                     console.log('No JSON files in .lprofile/, displaying empty webview'); // Diagnostic
                     panel.webview.postMessage({ command: 'loadFileTree', files: [] });
                     // Set default threshold if no state exists
